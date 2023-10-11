@@ -25,7 +25,7 @@ void loop(){
     myservo.write(pos);
     delay(1);
   }
-  delay(1000);
+  delay(2000);
 }
 
 
