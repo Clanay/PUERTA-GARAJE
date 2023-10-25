@@ -42,6 +42,8 @@ void loop()
   estado_pulsador_up=digitalRead(pulsador_up);
   estado_pulsador_down=digitalRead(pulsador_down);
   valor_ldr=analogRead(ldr);
+  digitalWrite(ledrojo,LOW);
+  digitalWrite(ledverde,LOW);
   if(estado_pulsador_down==1 && estado_cerrado==1)
   {
     digitalWrite(ledrojo,HIGH);
@@ -94,20 +96,17 @@ void loop()
       delay(10);
     }
   }
-    if(valor_ldr>400 && estado_cerrado==1)
+  estado_cerrado=digitalRead(cerrado);
+  estado_abierto=digitalRead(abierto);
+  if(valor_ldr>400 && estado_cerrado==1)
     {
       digitalWrite(ledverde,HIGH);
       digitalWrite(ledrojo,LOW);
       delay(200);
       digitalWrite(ledverde,LOW);
       digitalWrite(ledrojo,HIGH);
+
     }
-
-
-
-
-
-
 }
 
 
