@@ -19,11 +19,10 @@ int pos;
 //********** Setup ****************************************************************
 void setup()
 {
-  pinMode(12,OUTPUT);
   myservo.attach(8);
-  for(pos = myservo.read(); pos <= 270; pos += 1) {
+  for(pos = myservo.read(); pos <= 180; pos += 1) {
     myservo.write(pos);
-    delay(1);
+    delay(10);
   }
   Serial.begin(9600);
 }
@@ -33,14 +32,14 @@ void loop()
 {
   for(pos = 0; pos <= 180; pos += 1) {
     myservo.write(pos);
-    delay(1);
+    delay(10);
   }
-  delay(1000);
+  delay(7000);
   for(pos = 180; pos >= 0; pos -= 1) {
     myservo.write(pos);
-    delay(1);
+    delay(10);
   }
-  delay(2000);
+  delay(7000);
 }
 
 //********** Funcions *************************************************************

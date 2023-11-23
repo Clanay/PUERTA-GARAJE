@@ -33,10 +33,15 @@ void loop()
     {
       digitalWrite(ledverde,HIGH);
       digitalWrite(ledrojo,LOW);
-      delay(200);
+      delay(500);
       digitalWrite(ledverde,LOW);
       digitalWrite(ledrojo,HIGH);
-
+      delay(500);
+    }
+    else 
+    {
+       digitalWrite(ledverde,LOW);
+       digitalWrite(ledrojo,LOW);
     }
 }
 
