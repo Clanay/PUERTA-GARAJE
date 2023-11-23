@@ -9,18 +9,19 @@
 **********************************************************************************/
 
 //********** Includes *************************************************************
-#include<Servo.h>
+
 //********** Variables ************************************************************
 const int ledrojo = 10;
 const int ledverde = 13;
 const int cerrado=A2;
 const int abierto=A5;
-
+int estado_cerrado;
+int estado_abierto;
 //********** Setup ****************************************************************
 void setup()
 {
-  pinMode(ledverde, OUTPUT);
-  pinMode(ledrojo, OUTPUT);
+  pinMode(ledverde,OUTPUT);
+  pinMode(ledrojo,OUTPUT);
   pinMode(cerrado,INPUT);
   pinMode(abierto,INPUT);
 }
@@ -28,6 +29,25 @@ void setup()
 //********** Loop *****************************************************************
 void loop()
 {
+  estado_cerrado=digitalRead(cerrado);
+  estado_abierto=digitalRead(abierto);
+  if(estado_abierto==1)
+  {
+    digitalWrite(ledverde,HIGH);
+    digitalWrite(ledrojo,LOW);
+    delay(1000);
+  }
+  else if(estado_cerrado==1)
+  {
+    digitalWrite(ledverde,LOW);
+    digitalWrite(ledrojo,HIGH);
+    delay(1000);
+  }
+  else
+  {
+    digitalWrite(ledverde,LOW); 
+    digitalWrite(ledrojo,LOW);   
+  }
 
 }
 

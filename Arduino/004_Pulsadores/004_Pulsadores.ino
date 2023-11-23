@@ -31,25 +31,22 @@ void loop()
 {
   estado_pulsador_up=digitalRead(pulsador_up);
   estado_pulsador_down=digitalRead(pulsador_down);
-   if(estado_pulsador_down==1)
+  if(estado_pulsador_down==1)
   {
     digitalWrite(ledrojo,HIGH);
     digitalWrite(ledverde,LOW);
-    estado_pulsador_down=digitalRead(pulsador_down);
   }
-  if(estado_pulsador_up==1)
+  else if(estado_pulsador_up==1)
   {
     digitalWrite(ledrojo,LOW);
     digitalWrite(ledverde,HIGH);
-    estado_pulsador_up=digitalRead(pulsador_up);
-
-
-
   }
-
-
+  else
+  {
+    digitalWrite(ledrojo,LOW);
+    digitalWrite(ledverde,LOW);   
+  }
 } 
-
 //********** Funcions *************************************************************
 
 
