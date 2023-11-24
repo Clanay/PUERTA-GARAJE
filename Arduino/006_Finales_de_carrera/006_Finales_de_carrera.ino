@@ -31,13 +31,13 @@ void loop()
 {
   estado_cerrado=digitalRead(cerrado);
   estado_abierto=digitalRead(abierto);
-  if(estado_abierto==1)
+  if(estado_abierto==0)
   {
     digitalWrite(ledverde,HIGH);
     digitalWrite(ledrojo,LOW);
     delay(1000);
   }
-  else if(estado_cerrado==1)
+  else if(estado_cerrado==0)
   {
     digitalWrite(ledverde,LOW);
     digitalWrite(ledrojo,HIGH);

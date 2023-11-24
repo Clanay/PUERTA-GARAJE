@@ -13,14 +13,15 @@
 		<Item Name="Imagenes" Type="Folder" URL="../Imagenes">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="001_Test Leds.vi" Type="VI" URL="../001_Test Leds.vi"/>
+		<Item Name="007_Programa final.vi" Type="VI" URL="../007_Programa final.vi"/>
 		<Item Name="Garaje linx.vi" Type="VI" URL="../Garaje linx.vi"/>
-		<Item Name="LEDS QUE SE ENCIENDEN CON LOS PULSADORES.vi" Type="VI" URL="../LEDS QUE SE ENCIENDEN CON LOS PULSADORES.vi"/>
 		<Item Name="LINX - Blink (Simple).vi" Type="VI" URL="../LINX - Blink (Simple).vi"/>
 		<Item Name="LINX - Servo Puerta 2.vi" Type="VI" URL="../LINX - Servo Puerta 2.vi"/>
 		<Item Name="LINX - Servo Puerta.vi" Type="VI" URL="../LINX - Servo Puerta.vi"/>
 		<Item Name="LINX - Test Leds with servo.vi" Type="VI" URL="../LINX - Test Leds with servo.vi"/>
-		<Item Name="LINX - Test Leds.vi" Type="VI" URL="../LINX - Test Leds.vi"/>
 		<Item Name="LINX TEST PULSADORS.vi" Type="VI" URL="../LINX TEST PULSADORS.vi"/>
+		<Item Name="TEST_Garaje.vi" Type="VI" URL="../TEST_Garaje.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
