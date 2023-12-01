@@ -14,13 +14,12 @@
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="001_Test Leds.vi" Type="VI" URL="../001_Test Leds.vi"/>
+		<Item Name="002_Test Pulsadores con Leds.vi" Type="VI" URL="../002_Test Pulsadores con Leds.vi"/>
+		<Item Name="003_Servo.vi" Type="VI" URL="../003_Servo.vi"/>
+		<Item Name="004_FinalesCarrera.vi" Type="VI" URL="../004_FinalesCarrera.vi"/>
 		<Item Name="007_Programa final.vi" Type="VI" URL="../007_Programa final.vi"/>
-		<Item Name="Garaje linx.vi" Type="VI" URL="../Garaje linx.vi"/>
-		<Item Name="LINX - Blink (Simple).vi" Type="VI" URL="../LINX - Blink (Simple).vi"/>
 		<Item Name="LINX - Servo Puerta 2.vi" Type="VI" URL="../LINX - Servo Puerta 2.vi"/>
-		<Item Name="LINX - Servo Puerta.vi" Type="VI" URL="../LINX - Servo Puerta.vi"/>
 		<Item Name="LINX - Test Leds with servo.vi" Type="VI" URL="../LINX - Test Leds with servo.vi"/>
-		<Item Name="LINX TEST PULSADORS.vi" Type="VI" URL="../LINX TEST PULSADORS.vi"/>
 		<Item Name="TEST_Garaje.vi" Type="VI" URL="../TEST_Garaje.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -74,6 +73,49 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 		</Item>
-		<Item Name="Build Specifications" Type="Build"/>
+		<Item Name="Build Specifications" Type="Build">
+			<Item Name="Test Garaje" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{C97F74F7-0D40-4D91-89EB-89527CB3B545}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{7141A963-743A-4E6B-827C-CEEF4F476A33}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{98759B57-A36B-4B04-806B-1C4E76044E27}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Test Garaje</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/Test Garaje</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{E550D96C-C9AA-41B4-8400-98DE2C4A70E7}</Property>
+				<Property Name="Bld_version.build" Type="Int">5</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">Test Garaje.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Test Garaje/Test Garaje.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Test Garaje/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{AE638953-455F-4D93-BA5A-41446F535A38}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/007_Programa final.vi</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/TEST_Garaje.vi</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[2].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">3</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Test Garaje</Property>
+				<Property Name="TgtF_internalName" Type="Str">Test Garaje</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2023 </Property>
+				<Property Name="TgtF_productName" Type="Str">Test Garaje</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{9E094EE3-5B33-4C6E-96E0-4FCBA8682A3A}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">Test Garaje.exe</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+			</Item>
+		</Item>
 	</Item>
 </Project>
